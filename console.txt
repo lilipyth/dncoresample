@@ -1,0 +1,24 @@
+Windows PowerShell
+Copyright (C) 2009 Microsoft Corporation. All rights reserved.
+
+PS C:\Windows\System32\WindowsPowerShell\v1.0> &{$Branch='dev';iex ((new-object
+net.webclient).DownloadString('https://raw.githubusercontent.com/aspnet/Home/dev
+/dnvminstall.ps1'))}
+Using temporary directory: C:\Users\milei\AppData\Local\Temp\dnvminstall
+Downloading DNVM.ps1 to C:\Users\milei\AppData\Local\Temp\dnvminstall\dnvm.ps1
+Downloading DNVM.cmd to C:\Users\milei\AppData\Local\Temp\dnvminstall\dnvm.cmd
+Installing DNVM
+Installing .NET Version Manager to C:\Users\milei\.dnx\bin
+Creating destination folder 'C:\Users\milei\.dnx\bin' ...
+Installing 'dnvm.ps1' to 'C:\Users\milei\.dnx\bin' ...
+Installing 'dnvm.cmd' to 'C:\Users\milei\.dnx\bin' ...
+Adding C:\Users\milei\.dnx\bin to Process PATH
+Adding C:\Users\milei\.dnx\bin to User PATH
+Adding C:\Users\milei\.dnx to Process DNX_HOME
+Adding C:\Users\milei\.dnx to User DNX_HOME
+PS C:\Windows\System32\WindowsPowerShell\v1.0>
+
+reloadenv
+
+dnvm install -r coreclr latest -u
+
